@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Eggsplore",
+    "version": "1.0",
+    "description": "Adds an egg to random pages you visit.",
+    "permissions": [
+        "activeTab"
+      ],
+
+    "icons": {
+        "48": "icon48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["eggsplore.js"]
+        }
+      ]
+}
